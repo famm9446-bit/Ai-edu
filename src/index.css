@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #111113;
+    --ink: #f8f7f4;
+    --accent: #bc9aff;
+    --accent-glow: rgba(188, 154, 255, 0.18);
+    --ink-dim: rgba(248, 247, 244, 0.5);
+    --border: rgba(248, 247, 244, 0.12);
+    --card-bg: rgba(255, 255, 255, 0.025);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: radial-gradient(circle at 2px 2px, var(--border) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+}
+
+.font-serif-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-mono-editorial {
+  font-family: 'Geist Mono', monospace;
+}
+
+.font-sans-editorial {
+  font-family: 'Geist', sans-serif;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111113;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(248, 247, 244, 0.18);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

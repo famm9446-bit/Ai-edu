@@ -1,0 +1,6 @@
+{
+  "name": "AI EDUCATION TOOL",
+  "description": "An intelligent academic chatbot that answers questions and summarizes information strictly using Ref.1 — Prompt Engineering in Medical Education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
